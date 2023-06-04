@@ -30,6 +30,17 @@
       var messageContainer = document.createElement('p');
       messageContainer.textContent = message;
       document.body.appendChild(messageContainer);
+      
+      var imageSrc = 'https://example.com/image.jpg';
+      var imageWidth = 400;
+      var imageHeight = 300;
+      
+      var imageElement = document.createElement('img');
+      imageElement.src = imageSrc;
+      imageElement.width = imageWidth;
+      imageElement.height = imageHeight;
+      
+      document.body.appendChild(imageElement);
     }
   </script>
   
