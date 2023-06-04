@@ -21,10 +21,17 @@
  <p>Click the button below:</p>
  <button onclick="alert('Hello, World!\nThis is Demo page for DevOps Practicals.')">Click Me</button>
   
- <script>
-    // You can add JavaScript code here
-    console.log('Hello from the console!');
- </script>
+<p>Click the button below:</p>
+  <button onclick="displayMessage()">Show</button>
+  
+  <script>
+    function displayMessage() {
+      var message = 'Hello from the console...!!';
+      var messageContainer = document.createElement('p');
+      messageContainer.textContent = message;
+      document.body.appendChild(messageContainer);
+    }
+  </script>
   
 </body>
 </html>
