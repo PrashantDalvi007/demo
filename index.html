@@ -37,6 +37,16 @@
     newWindow.document.body.innerHTML = dialogContent;
   }
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var yearElement = document.getElementById('currentYear');
+      var currentYear = new Date().getFullYear();
+      yearElement.innerHTML = currentYear;
+    });
+</script>
+
+<p>AWS DevOps Demo &copy;<span id="currentYear"></span></p>
   
 </body>
 </html>
