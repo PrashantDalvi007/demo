@@ -21,17 +21,17 @@
  <p>Click the button below:</p>
  <button onclick="alert('Hello, Techie!\nThis is Demo page for DevOps Practicals.')">Click Me</button>
   
-<button onclick="displayMessage()">Show</button>
+<button onclick="openNewWindow()">Show</button>
 
 <script>
-  function displayMessage() {
+ function openNewWindow() {
     var message = 'Thank You for visiting here...!! &#9786;';
     var imageSrc = 'https://t4.ftcdn.net/jpg/04/00/26/99/240_F_400269908_gDF8JR2ctyHWiL1kww6WEWBerRzD5MBb.jpg';
 
-    var dialogContent = '<p>' + message + '</p>' +
-                        '<img src="' + imageSrc + '" width="400" height="300">';
-
-    alert(dialogContent);
+    var dialogContent = '<p>' + message + '</p>' + '<img src="' + imageSrc + '" width="400" height="300">';
+    
+   var newWindow = window.open('', 'NewWindow', 'width=500,height=400');
+    newWindow.document.body.innerHTML = dialogContent;
   }
 </script>
   
